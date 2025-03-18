@@ -13,7 +13,9 @@ This project demonstrates how to deploy a Gnosis Safe with a custom guard/module
 ### ⚙️ Getting Started
 
 #### Prerequisites
+
 Node.js: Version >= 18.x.x
+
 Hardhat: For Ethereum development and testing.
 
 #### Installation
