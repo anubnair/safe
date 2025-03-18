@@ -27,9 +27,7 @@ cd safe
 Install dependencies/configure env:
 
 ```
-npm install
-# or
-yarn install
+npm install --save-dev hardhat
 
 cp .env.example .env
 ```
