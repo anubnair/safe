@@ -165,7 +165,6 @@ describe("NoDelegatecallGuard", async function () {
       "0x" // Signatures (assuming the contract handles multi-sig internally)
     ]);
 
-    // Test with only 2 signatures (should fail)
     let x = await expect(
       execTransaction([alice, owner2, owner3], safe, ZeroAddress, 0, transferData, 1)
     )});
