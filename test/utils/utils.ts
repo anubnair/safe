@@ -18,7 +18,7 @@ const execTransaction = async function (
   value: BigNumberish,
   data: string,
   operation: number
-): Promise<void> {
+): Promise<string> {
   // Get the current nonce of the Safe contract
   const nonce = await safe.nonce();
 
@@ -59,7 +59,7 @@ const execTransaction = async function (
   }
 
   // Execute the transaction on the Safe contract
-  await safe.execTransaction(
+  const tx = await safe.execTransaction(
     to,
     value,
     data,
@@ -71,6 +71,8 @@ const execTransaction = async function (
     ZeroAddress,
     signatureBytes
   );
+
+  return tx.hash;
 };
 
 export { execTransaction };
