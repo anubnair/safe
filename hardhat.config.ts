@@ -3,7 +3,15 @@ import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-dependency-compiler";
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.28",
+  solidity: {
+    version: "0.8.28", // Adjust the version as needed
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200, // Adjust the number of optimization runs as needed
+      },
+    },
+  },
   networks: {
     hardhat: {
       allowUnlimitedContractSize: true,
