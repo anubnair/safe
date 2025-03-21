@@ -44,10 +44,6 @@ For any questions or suggestions, feel free to reach out at anubnair90@gmail.com
 
 ### Safe Contract Deployment (Sepolia Testnet)
 
-Safe Contract Deployment (Sepolia Testnet)
-
-This document provides an overview of the deployed smart contracts and key transactions related to the Safe (Gnosis Safe) deployment on the Sepolia testnet.
-
 Deployed Contracts
 
 1. Mastercopy
